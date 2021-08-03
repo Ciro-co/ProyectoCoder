@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #92d7ef;
+    height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+}
+body{
+    background-image: radial-gradient( #ffb6a3 , #f5efea);
+    font-family: 'Zilla Slab', serif;
+
+}
+
+#barraNav{
+    display: flex;
+
+}
+
+#barraNav ul {
+    list-style:none;
+    margin:0;
+    padding:0; 
+}
+
+.enlace {
+    display:block;
+    background-color:#0f1d9b;
+    color:#f5efea;
+    text-decoration:none;
+    font-size:15px;
+    padding:10px;
+    letter-spacing:1px;
+
+}
+
+#barraNav ul li {
+    position:static;
+    float:right;
+    margin:10px;
+    padding:0;
+    width:150px;
+    text-align: center;
+}
+
+#barraNav ul li:hover {
+    background:#92d7ef;
+}
+
+#barraNav ul ul {
+    display:none;
+    position:absolute;
+}
+
+
+a {
+    text-decoration:none;
+    color: #0f1d9b;
+   
+}
+.Menu {
+    list-style: none;
+    padding:5px;
+    width: 50px;
+    background-color: #92d7ef;
+    font-size:0;
+    border-radius: 20%;
+    position: relative;
+      }
+  .Menu li {
+      display: inline-block;
+      width: 25%;
+      position:relative;
+      font-size: 18px;
+      }
+  .Menu ul {
+      position: absolute;
+      display: none;
+      }
+      
+  .Menu ul li {
+      display: block;
+      }
+  
+  li:hover{
+      color: #f5efea;
+      font-weight: bold;
+  }
+  a{
+      text-decoration: none;
+      color: #0f1d9b;
+  }
+  a:hover{
+      color:black;
+  }
+  
+  .Menu li:hover ul {
+      display:block;
+      background-color: #a2eae0;
+  }
+h1 {
+    color: rgb(0, 0, 114);
+}
+.tabla{
+    border: black 3px solid;
+    margin: 15px;
+    padding: 15px;
+    color: rgb(0, 8, 8);
+}
+td {
+    border: 1px solid ;
+    margin: 5px;
+    padding: 5px;
+}
+
+img {
+    border-radius: 5%;
+}
+.fotos-ingresos{
+    width: 40%;
+}
+.ropaNovedad {
+    height: 550px;
+}
+.TamañoCarrusel{
+    width:650px;
+    margin:0 auto;
+}
+p{
+    color: #6f00ff;
+    font-size: 20px;
+}
+.NuevosI {
+    color: #965360;
+}
+
+legend {
+    color: #15009b;
+}
+#copy{
+    color: black;
+    font-size: 22px;
+}
+
+#Nov{
+    display: grid;
+    height: 60%;
+    background-color: #f9acbb;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+#Nov div{
+    align-content: start;
+    justify-items: center;
+}
+
+#titulo{
+    padding: 20px;
+    font-size: 30px;
+}
+
+.padre{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+   
+}
+.hijo{
+    flex: 25%;
+    padding: 5px;
+}
+.hijo img{
+    margin-top: 5px;
+    width: 100%;
+}
+.hijo  :hover{
+    transform: scale(1.4);
+}
+@media only screen and (max-width: 768px){
+    .hijo{
+        flex: 50%;
+        }
+        #barraNav ul li{
+            width: 85px;
+        }
+        .enlace{
+            font-size: 12px;
+        }
+    }
+    @media only screen and  (min-width:768px) {
+        .hijo{
+            flex: 33%;
+            }
+              
+        }
+        
+        
+@media only screen and  (min-width:1024px) {
+    .hijo{
+        flex: 25%;
+        }
+    }

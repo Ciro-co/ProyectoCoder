@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
+    </head>
+<body bgcolor="#A2F7FA">
+    <header>
+        <center><h1>Logo</h1></center>
+    </header>
+    <nav id="barraNav">
+        <ul>
+    <li><a class="enlace" href="formulario.html">Contactanos</a></li>
+    <li><a class="enlace" href="index.html">Calzado</a></li>
+    <li><a class="enlace" href="index.html">Catalogo2</a></li>
+    <li><a class="enlace" href="catalogo.html">Catalogo1</a></li>
+    <li><a class="enlace" href="index.html">Home</a></li>
+      
+    </ul>
+    </nav>
+    <br><br><br>
+    <section>
+        <h1>Formularios</h1>
+<fieldset> <legend>Formulario de contacto</legend>    
+      <form action="#">
+            <div>
+                 <label for="nombre">Ingrese su nombre</label>
+                <input type="text" name="nombre" placeholder="Nombre">
+            </div>
+            <div>
+                <label for="nombre">Ingrese su Apellido</label>
+                <input type="text" name="apellido" placeholder="Apellido">
+            </div>
+            <div>
+                <label for="email">Ingrese su mail</label>
+                <input type="email" name="email" required>
+            </div>
+            <div>
+                <label for="Pais">Seleccione su pais</label>
+                <select name="Pais" id="">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                </select>
+            </div>
+            <div>
+                <label for="Genero">Genero</label>
+                <input type="Radio" name="Genero" value="Mujer">Mujer
+                <input type="Radio" name="Genero" value="Hombre">Hombre
+                <input type="Radio" name="Genero" value="Otro">Otro
+            </div>
+             <div>
+                <label for="Texto">Deje su mensaje</label>
+                <input type="text">
+            </div>
+            <div>
+                <input type="submit" value="enviar datos">
+                <input type="reset" value="Borrar todo">
+            </div>
+        </form>
+    </fieldset> 
+    </section>
+</body>
+</html>

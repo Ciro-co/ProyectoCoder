@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciro Barraza</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    </head>
+<body>
+    <header>
+        <center><h1>Logo</h1></center>
+    </header>
+    <nav id="barraNav">
+        <ul>
+            <li><a class="enlace" href="formulario.html">Contactanos</a></li>
+            <li><a class="enlace" href="#">Calzado</a></li>
+            <li><a class="enlace" href="#">Catalogo2</a></li>
+            <li><a class="enlace" href="catalogo.html">Catalogo1</a></li>
+            <li><a class="enlace" href="index.html">Home</a></li>
+        </ul>
+</nav>
+<br>
+<br><br>
+    <aside>
+        
+        <ul class="Menu"> 
+        <li> Menu 
+            <ul>
+                <li><a href="#Nov">Novedades</a></li>
+                <li><a href="#Ingr">Nuevos Ingresos</a></li>
+                <li><a href="#Footer">Pie de pagina</a></li>
+            </ul> 
+        </li>
+    </ul>
+    
+    </aside>
+    <section>
+        <h2>Novedades</h2>
+        <div id="Nov">
+        <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem molestiae repudiandae laudantium! Modi nam facilis expedita voluptatibus alias quaerat qui unde ullam amet perferendis, sed eos quidem, molestias quos consequuntur nemo corporis veniam? Dolore ut molestias corrupti atque qui cum tempora quae laudantium veritatis eveniet porro cupiditate, dolorum neque suscipit eum ab obcaecati? Earum velit explicabo porro voluptatum delectus cupiditate eligendi eos possimus nesciunt? Vitae quod vero dolore. Reiciendis distinctio quas sed odit, sapiente inventore. Tempore iste, deleniti optio commodi delectus non alias, et sequi excepturi totam consequatur officia. Similique vero, officiis placeat mollitia quaerat sit dolores ratione esse perferendis? Rerum consequatur magni et suscipit qui ex debitis repudiandae vero eligendi ullam asperiores eius tempore tenetur placeat commodi neque fugiat sunt illo, laudantium enim corrupti omnis iusto. Libero ipsum repellendus atque, provident a corporis, magni iusto quasi consequatur vitae tempora excepturi quo perspiciatis. Incidunt perferendis deserunt aliquid aut quas, nam ut aspernatur non a nisi ea eveniet totam deleniti facere praesentium. Est repellat expedita quas nesciunt aperiam molestias! Neque quibusdam aliquam nesciunt harum doloremque magnam numquam illum. Repudiandae, sapiente! Dicta corporis ratione eos ipsum </div>
+        <div> <img align=right class="fotoNovedad" src="media/ropa.png" alt="Foto de ropa"  > </div>
+        
+        </div>
+    </section>
+    <br><br>
+    <section>
+      <h2 class="NuevosI" id="Ingr">Nuevos Ingresos <span class="badge bg-info">New</span></h2>
+      <br>
+      <div id="carouselExampleIndicators" class="carousel slide TamañoCarrusel " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="media/campera.jpg" class="d-block w-100 ropaNovedad" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="media/campera2.jpg" class="d-block w-100 ropaNovedad" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="media/pantalon.jpg" class="d-block w-100 ropaNovedad" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="media/pantalon2.jpg" class="d-block w-100 ropaNovedad" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previo</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+    <br><br><br>
+    <hr>
+    <footer id="Footer">
+        <p>Instagram Facebook Mail</p>
+        <p align=right id="copy" >2021 Ciro Barraza <br>Todos los derechos reservados </p>
+    </footer>
+    <script src="popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>  
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) 
+        {
+          return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script> 
+</body>
+</html>
